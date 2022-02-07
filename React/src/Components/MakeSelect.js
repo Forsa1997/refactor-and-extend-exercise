@@ -6,7 +6,7 @@ class MakeSelect extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            logo: "https://www.car-logos.org/wp-content/uploads/2011/09/volkswagen.png"
+            logo: "https://www.car-logos.org/wp-content/uploads/2011/09/abarth1.png"
         }
     }
 
@@ -24,8 +24,7 @@ render() {
     return (
     <div className="row align-items-start">
     <div className="col">
-    <select selected="Volkswagen"
-                className="form-control" id="make" name="make"
+    <select className="form-control" id="make" name="make"
                 onChange={e => this.handleSelection(e)}>
                 {
                     carBrands.map((brand, index) =>
